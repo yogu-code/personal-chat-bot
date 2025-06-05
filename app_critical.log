@@ -1,0 +1,6 @@
+2025-05-18 21:30:47,676 - CRITICAL - GOOGLE_GEMINI_API_KEY is not set in .env file!
+2025-05-18 21:31:00,706 - CRITICAL - GOOGLE_GEMINI_API_KEY is not set in .env file!
+2025-05-19 09:14:13,941 - CRITICAL - Error processing files: Could not import faiss python package. Please install it with `pip install faiss-gpu` (for CUDA supported GPU) or `pip install faiss-cpu` (depending on Python version).
+2025-05-19 09:22:29,525 - CRITICAL - Error loading vector store: Could not import faiss python package. Please install it with `pip install faiss-gpu` (for CUDA supported GPU) or `pip install faiss-cpu` (depending on Python version).
+2025-05-20 08:30:04,521 - CRITICAL - Error processing files: Could not import faiss python package. Please install it with `pip install faiss-gpu` (for CUDA supported GPU) or `pip install faiss-cpu` (depending on Python version).
+2025-05-20 09:06:37,507 - CRITICAL - Error processing files: Could not import faiss python package. Please install it with `pip install faiss-gpu` (for CUDA supported GPU) or `pip install faiss-cpu` (depending on Python version).
