@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from waitress import serve
 import os
 import logging
 from logging.handlers import RotatingFileHandler
@@ -403,12 +402,11 @@ def delete_pdf():
     except Exception as e:
         logger.critical(f"Error deleting PDF: {str(e)}")
         return jsonify({"error": f"Error deleting PDF: {str(e)}"}), 500
+
 # Initialize vector store at import time (so Gunicorn sees it)
 print("📄 Initializing existing PDFs...")
 initialize_existing_pdfs()
 process_pdfs_and_create_vectorstore()
 print("✅ Vector store ready.")
 
-# This block only runs if you use `python main.py` manually (not with Gunicorn)
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+# No need for app.run() as Gunicorn will handle the server
