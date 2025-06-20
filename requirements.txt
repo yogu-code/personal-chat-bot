@@ -2,8 +2,8 @@ Flask
 flask-cors
 PyPDF2
 langchain
-langchain_community
-langchain_google_genai
+langchain-community
+langchain-google-genai
 python-dotenv
-waitress
 gunicorn
+faiss-cpu
