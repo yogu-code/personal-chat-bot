@@ -403,10 +403,12 @@ def delete_pdf():
     except Exception as e:
         logger.critical(f"Error deleting PDF: {str(e)}")
         return jsonify({"error": f"Error deleting PDF: {str(e)}"}), 500
+# Initialize vector store at import time (so Gunicorn sees it)
+print("📄 Initializing existing PDFs...")
+initialize_existing_pdfs()
+process_pdfs_and_create_vectorstore()
+print("✅ Vector store ready.")
 
+# This block only runs if you use `python main.py` manually (not with Gunicorn)
 if __name__ == "__main__":
-    print("📄 Initializing existing PDFs...")
-    initialize_existing_pdfs()
-    process_pdfs_and_create_vectorstore()
-    print("🚀 Starting server...")
-    serve(app, host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5000)
