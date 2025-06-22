@@ -4,3 +4,8 @@
 2025-05-19 09:22:29,525 - CRITICAL - Error loading vector store: Could not import faiss python package. Please install it with `pip install faiss-gpu` (for CUDA supported GPU) or `pip install faiss-cpu` (depending on Python version).
 2025-05-20 08:30:04,521 - CRITICAL - Error processing files: Could not import faiss python package. Please install it with `pip install faiss-gpu` (for CUDA supported GPU) or `pip install faiss-cpu` (depending on Python version).
 2025-05-20 09:06:37,507 - CRITICAL - Error processing files: Could not import faiss python package. Please install it with `pip install faiss-gpu` (for CUDA supported GPU) or `pip install faiss-cpu` (depending on Python version).
+2025-06-20 20:03:45,377 - CRITICAL - Error processing files: [Errno 2] No such file or directory: 'faiss_index'
+2025-06-20 20:13:03,126 - CRITICAL - Error processing files: [Errno 2] No such file or directory: 'index.pkl'
+2025-06-20 20:13:03,126 - CRITICAL - Error processing files: [Errno 2] No such file or directory: 'index.pkl'
+2025-06-20 20:31:56,240 - CRITICAL - Error processing files: [Errno 2] No such file or directory: 'index.pkl'
+2025-06-20 20:31:56,252 - CRITICAL - Error processing files: [Errno 2] No such file or directory: 'index.pkl'
